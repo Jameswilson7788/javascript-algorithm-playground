@@ -1,10 +1,12 @@
 function Stack() {
-  let items = []
+  this.items = []
   this.push = function (element) {
-    items.push(element)
+    this.items.push(element)
   }
   this.pop = function () {
-    return items.pop()
+    return this.items.pop()
   }
-
+  this.get = function () {
+    console.log(this.items)
+  }
 }
